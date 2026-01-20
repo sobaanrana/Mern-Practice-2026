@@ -29,9 +29,11 @@ export const createProduct = async (req, res) => {
   //const created = await Product.create(product); // or await new Product(product).save()
   try {
     await newProduct.save();
-    res
-      .status(201)
-      .json({ success: true, message: "Product Created Successfully" });
+    res.status(201).json({
+      success: true,
+      message: "Product Created Successfully",
+      data: newProduct,
+    });
   } catch (error) {
     console.log("Error creating Product:", error.message);
     res.status(500).json({ success: false, message: "Server Error" });
@@ -64,7 +66,7 @@ export const updateProduct = async (req, res) => {
   }
 
   try {
-    const updatedProduct = Product.findByIdAndUpdate(id, product, {
+    const updatedProduct = await Product.findByIdAndUpdate(id, product, {
       new: true,
     });
     res.status(200).json({ success: true, data: updatedProduct });

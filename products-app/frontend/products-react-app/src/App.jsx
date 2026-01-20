@@ -1,12 +1,10 @@
-import ProductForm from "../components/ProductForm/ProductForm";
-import ProductList from "../components/ProductList/ProductList";
+import InventoryManagerPage from "../pages/InventoryManagerPage";
 import "./App.css";
 
 function App() {
   return (
-    <div className="app_main_container">
-      <ProductForm />
-      <ProductList />
+    <div>
+      <InventoryManagerPage />
     </div>
   );
 }

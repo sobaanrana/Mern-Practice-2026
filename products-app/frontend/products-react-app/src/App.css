@@ -4,10 +4,3 @@
   padding: 2rem;
   /* text-align: center; */
 }
-.app_main_container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 16px; /* optional spacing */
-  background-color: #fcfcfc;
-  height: 80%;
-}
