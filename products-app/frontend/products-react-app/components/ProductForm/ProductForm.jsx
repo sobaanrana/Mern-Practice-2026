@@ -68,7 +68,7 @@ const ProductForm = ({ setProducts, formData, setFormData, editProduct }) => {
   }, [formData]);
 
   return (
-    <div className="bg-white p-8">
+    <div className="bg-white p-8 my-10 lg:my-0">
       <h2 className="border-b border-gray-200 pb-2 font-semibold">
         Add a Product
       </h2>

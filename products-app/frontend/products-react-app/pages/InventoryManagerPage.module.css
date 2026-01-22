@@ -1,7 +1,9 @@
-.imp_main_container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 16px; /* optional spacing */
-  background-color: #fcfcfc;
-  height: 80%;
+@media (min-width: 1024px) {
+  .imp_main_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 16px; /* optional spacing */
+    background-color: #fcfcfc;
+    height: 80%;
+  }
 }
